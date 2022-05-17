@@ -1,6 +1,6 @@
-defmodule​ Mastery.Core.Response ​do​​
-defstruct ​~w[quiz_title template_name to email answer correct timestamp]a​
-​end
+defmodule Mastery.Core.Response do
+  defstruct ~w[quiz_title template_name to email answer correct timestamp]a
+end
 
 def new(quiz, email, answer) do
   question = quiz.current_question
